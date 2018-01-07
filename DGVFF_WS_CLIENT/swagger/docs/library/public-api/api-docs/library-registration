@@ -1,0 +1,98 @@
+{
+  "apiVersion":"0.2",
+  "swaggerVersion":"1.1",
+  "basePath":"",
+  "resourcePath":"/fls",
+  "apis":[
+  {
+			"path":"/api/library/registrations.{format}",
+			"description":"Returns the list of library",
+			"operations":[
+			{
+				"httpMethod":"GET",
+				"summary":"Returns the list of library",
+				"notes": "Returns the list of library",
+				"nickname":"registrations"
+			}
+			]
+	},
+	 {
+			"path":"/api/library/{name}/registration.{format}",
+			"description":"Returns the selected library",
+			"operations":[
+			{
+				"httpMethod":"GET",
+				"nickname":"getlibrary",
+				"responseClass":"getlibrary",
+				"parameters":[{
+					  "description":"Name of the Library",
+					  "paramType":"path",
+					  "required":true,
+					  "allowMultiple":false,
+					  "dataType":"name"
+					}
+				],				
+				"summary":"Returns the selected library",
+				"notes": "Returns the selected library"
+			}
+		]
+	},
+	 {
+			"path":"/api/library/{name}/registration.{format}",
+			"description":"Returns the information about selected library (HEAD)",
+			"operations":[
+			{
+				"httpMethod":"GET",
+				"nickname":"getlibrary",
+				"responseClass":"getlibrary",
+				"parameters":[],
+				"summary":"Returns the information about selected library (HEAD)",
+				"notes": "Returns the information about selected library (HEAD)"
+			}
+		]
+	},
+	 {
+			"path":"/api/library/{name}/registration.{format}",
+			"description":"Create a library",
+			"operations":[
+			{
+				"httpMethod":"POST",
+				"nickname":"createlibrary",
+				"responseClass":"getlibrary",
+				"parameters":[],
+				"summary":"Create a library",
+				"notes": "Create a library"
+			}
+		]
+	},
+	 {
+			"path":"/api/library/{name}/registration.{format}",
+			"description":"Update a library",
+			"operations":[
+			{
+				"httpMethod":"PUT",
+				"nickname":"updatelibrary",
+				"responseClass":"updatelibrary",
+				"parameters":[],
+				"summary":"Update a library",
+				"notes": "Update a library"
+			}
+		]
+	},
+	 {
+			"path":"/api/library/{name}/registration.{format}",
+			"description":"Delete a library",
+			"operations":[
+			{
+				"httpMethod":"DELETE",
+				"nickname":"deletelibrary",
+				"responseClass":"deletelibrary",
+				"parameters":[],
+				"summary":"Delete a library",
+				"notes": "Delete a library"
+			}
+		]
+	}
+  ],
+  "models":{}
+}

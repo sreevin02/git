@@ -1,0 +1,535 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a DGVFF Client Server.  You can find out more about DGVFF project at <a href=\"http://dgvff.com\">http://dgvff.com</a> or <a href=\"http://ideabytes.com\">http://ideabytes.com</a>. ",
+    "version": "1.0.0",
+    "title": "DGVFF_WS_CLIENT",
+    "termsOfService": "http://dgvff.com/",
+    "contact": {
+      "url": "http://dgvff.com",
+      "name": "Your pals at Swagger",
+      "email": "info.dfvff.com"
+    },
+    "license": {
+      "name": "localhost:80",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost:80",
+  "basePath": "/DGVFF_WS_CLIENT",
+  "schemes": [
+    "http"
+  ],
+  "tags": [
+    {
+      "name": "DGVFF_WS_CLIENT",
+      "description": "Access to Services",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "http://dgvff.com"
+      }
+    }
+  ],
+  "paths": {
+    "/api/web/InsertBillOfladingDetails.json": {
+      "post": {
+        "tags": [
+          "DGVFF_WS_CLIENT"
+        ],
+        "summary": "* Inserts InsertBillOfladingDetails",
+        "description": "* Inserts InsertBillOfladingDetails",
+        "operationId": "InsertBillOfladingDetails",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "BillOfladingDetails",
+            "description": "**Inserts the GetBillOfladdingDetails",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Pet"
+            }
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:DGVFF_WS_CLIENT",
+              "read:DGVFF_WS_CLIENT"
+            ]
+          }
+        ]
+        }
+      },
+        "/api/web/GetBillOfladdingDetails.json": {
+      "post": {
+        "tags": [
+          "DGVFF_WS_CLIENT"
+        ],
+        "summary": "Get BillOfladding Details",
+        "description": "Get BillOfladding Details",
+        "operationId": "GetBillOfladdingDetails",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "BillOfladdingInfo",
+            "description": "BillOfladding",
+            "required": true
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Validation exception"
+          },
+          "404": {
+            "description": "BillOfladding not found"
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:DGVFF_WS_CLIENT",
+              "read:DGVFF_WS_CLIENT"
+            ]
+          }
+        ]
+      }
+    },
+    "/api/web/getUnNumberInfo/{UNNumber}.json": {
+      "get": {
+        "tags": [
+          "DGVFF_WS_CLIENT"
+        ],
+        "summary": "**Returns the unNumber Information",
+        "description": " **Returns the unNumber Information.",
+        "operationId": "findPetsByStatus",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+         {
+            "in": "path",
+            "name": "UNNumber",
+            "description": "Please Enter UNNumber",
+            "required": true,
+            "type": "String"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Pet"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:DGVFF_WS_CLIENT",
+              "read:DGVFF_WS_CLIENT"
+            ]
+          }
+        ]
+      }
+    },
+    "/api/web/getLatestTransactionId.json": {
+      "get": {
+        "tags": [
+          "DGVFF_WS_CLIENT"
+        ],
+        "summary": "getLatestTransactionId",
+        "description": "Return LatestTransaction Id",
+        "operationId": "findPetsByTags",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "String"
+            }
+          },
+          "400": {
+            "description": "Invalid tag value"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:DGVFF_WS_CLIENT",
+              "read:DGVFF_WS_CLIENT"
+            ]
+          }
+        ]
+      }
+    },
+    "/api/web/PerformSegregation.json": {
+      "post": {
+        "tags": [
+          "DGVFF_WS_CLIENT"
+        ],
+        "summary": "Perform Segregation",
+        "description": "Returns divide billofladings based on manifestIds with respect to Segregation logic ",
+        "operationId": "getPetById",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+             "in": "body",
+            "name": "PerformSegregation",
+            "description": "**IPerform Segregation",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Pet"
+            
+          }
+        }
+        ],
+        "responses": {
+          "404": {
+            "description": "PerformSegregation not found"
+          },
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Pet"
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          },
+          {
+            "petstore_auth": [
+              "write:DGVFF_WS_CLIENT",
+              "read:DGVFF_WS_CLIENT"
+            ]
+          }
+        ]
+      }
+    },
+   "/api/web/GetSubstanceGroupInfo.json": {
+      "post": {
+        "tags": [
+          "DGVFF_WS_CLIENT"
+        ],
+        "summary": "Get SubstanceGroupInfo",
+        "description": "",
+        "operationId": "GetSubstanceGroupInfo",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+         {
+            "in": "query",
+            "name": "tags",
+            "description": "GetSubstanceGroupInfo",
+            "required": true,
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:DGVFF_WS_CLIENT",
+              "read:DGVFF_WS_CLIENT"
+            ]
+          }
+        ]
+      }
+},
+ "/api/web/deleteBillofladdingData.json": {
+      "delete": {
+        "tags": [
+          "DGVFF_WS_CLIENT"
+        ],
+        "summary": "Deletes a BillofladdingData",
+        "description": "Deletes a BillofladdingData",
+        "operationId": "deleteBillofladdingData",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "BillofladdingData",
+            "description": "BillofladdingData",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Pet"
+            }
+         }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid BillofladdingData value"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:DGVFF_WS_CLIENT",
+              "read:DGVFF_WS_CLIENT"
+            ]
+          }
+        ]
+      }
+    }
+},
+  "definitions": {
+    "User": {
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "xml": {
+            "name": "id"
+          }
+        },
+        "username": {
+          "type": "string",
+          "xml": {
+            "name": "username"
+          }
+        },
+        "firstName": {
+          "type": "string",
+          "xml": {
+            "name": "firstName"
+          }
+        },
+        "lastName": {
+          "type": "string",
+          "xml": {
+            "name": "lastName"
+          }
+        },
+        "email": {
+          "type": "string",
+          "xml": {
+            "name": "email"
+          }
+        },
+        "password": {
+          "type": "string",
+          "xml": {
+            "name": "password"
+          }
+        },
+        "phone": {
+          "type": "string",
+          "xml": {
+            "name": "phone"
+          }
+        },
+        "userStatus": {
+          "type": "integer",
+          "format": "int32",
+          "xml": {
+            "name": "userStatus"
+          },
+          "description": "User Status"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "Category": {
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "xml": {
+            "name": "id"
+          }
+        },
+        "name": {
+          "type": "string",
+          "xml": {
+            "name": "name"
+          }
+        }
+      },
+      "xml": {
+        "name": "Category"
+      }
+    },
+    "Pet": {
+      "required": [
+        "name",
+        "photoUrls"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "xml": {
+            "name": "id"
+          }
+        },
+        "category": {
+          "xml": {
+            "name": "category"
+          },
+          "$ref": "Category"
+        },
+        "name": {
+          "type": "string",
+          "example": "doggie",
+          "xml": {
+            "name": "name"
+          }
+        },
+        "photoUrls": {
+          "type": "array",
+          "xml": {
+            "name": "photoUrl",
+            "wrapped": true
+          },
+          "items": {
+            "type": "string"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "xml": {
+            "name": "tag",
+            "wrapped": true
+          },
+          "items": {
+            "$ref": "Tag"
+          }
+        },
+        "status": {
+          "type": "string",
+          "xml": {
+            "name": "status"
+          },
+          "description": "pet status in the store"
+        }
+      },
+      "xml": {
+        "name": "Pet"
+      }
+    },
+    "Tag": {
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "xml": {
+            "name": "id"
+          }
+        },
+        "name": {
+          "type": "string",
+          "xml": {
+            "name": "name"
+          }
+        }
+      },
+      "xml": {
+        "name": "Tag"
+      }
+    },
+    "Order": {
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64",
+          "xml": {
+            "name": "id"
+          }
+        },
+        "petId": {
+          "type": "integer",
+          "format": "int64",
+          "xml": {
+            "name": "petId"
+          }
+        },
+        "quantity": {
+          "type": "integer",
+          "format": "int32",
+          "xml": {
+            "name": "quantity"
+          }
+        },
+        "shipDate": {
+          "type": "string",
+          "format": "date-time",
+          "xml": {
+            "name": "shipDate"
+          }
+        },
+        "status": {
+          "type": "string",
+          "xml": {
+            "name": "status"
+          },
+          "description": "Order Status"
+        },
+        "complete": {
+          "type": "boolean"
+        }
+      },
+      "xml": {
+        "name": "Order"
+      }
+    }
+  }
+}

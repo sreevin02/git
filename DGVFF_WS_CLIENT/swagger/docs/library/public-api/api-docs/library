@@ -1,0 +1,3142 @@
+{  
+   "apiVersion":"0.2",
+   "swaggerVersion":"1.1",
+   "basePath":"http://localhost:80/DGDOX",
+   "resourcePath":"/fls",
+   "apis":[  
+      {  
+         "path":"/api/web/product/productinformation.json",
+         "description":" **Returns the Product Details",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Returns the Product Details",
+               "notes":"Returns the Product Details",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"getProductDetails"
+            }
+         ]
+      },
+         {  
+         "path":"/api/web/product/Latestproductinformation.json",
+         "description":" **Returns the LatestProduct Details",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Returns the Latest Product Details",
+               "notes":"Returns the Latest Product Details",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"getlatestProductDetails"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getTransactionID.json",
+         "description":" **Returns GETTRANSACTIONID",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns getTransactionID",
+               "notes":"Returns getTransactionID",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"getTransactionID"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/transaction_id/GetBillofladingwithTransaction_Id.json",
+         "description":" **Returns the Billoflading Details",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Returns the Billoflading Details",
+               "notes":"Returns the Billoflading Details",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"GetBillofladingwithTransaction_Id"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/customer/info/customerinformation.json",
+         "description":" **Returns customer information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns customer information",
+               "notes":"Returns customer information",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"customerinformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/customer/info/homepageinformation/{transportationmode}.json",
+         "description":" **Returns homepage information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns homepage information",
+               "notes":"Returns homepage information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"transportationmode",
+                     "description":"transportationmode",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"homepageinformation"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/consigneInfo/info/genaratedId.json",
+         "description":" **Returns customer information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns customer information",
+               "notes":"Returns customer information",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"ConsineId"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/InsertIntocustomerinformation.json",
+         "description":" **Inserts the records in to the Customer Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Inserts the records in to the Customer Table",
+               "notes":"Inserts the records in to the Customer Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"insertCustomerInformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/UpdateCustomerinformation.json",
+         "description":" **Update the records in to the shipper,consignee & address Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* update the records in to the shipper,consignee & address Table",
+               "notes":"update the records in to the shipper,consignee & address Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"updateCustomerInformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/InsertIntoproductinformation.json",
+         "description":" **Inserts the records in to the Product Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Inserts the records in to the Product Table",
+               "notes":"Inserts the records in to the Product Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"insertProductInformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/Updateproductinformation.json",
+         "description":" **Update the records in to the Product Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Update the records in to the Product Table",
+               "notes":"Update the records in to the Product Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"UpdateProductInformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/insertintoordeinformation.json",
+         "description":" **Inserts the records in to the Order Info Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Inserts the records in to the Order Info Table",
+               "notes":"Inserts the records in to the Order Info Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"insertOrderInfoInformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/save/savebillofladding.json",
+         "description":" **Inserts the records in to the savebillofladding Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Inserts the records in to the savebillofladding Table",
+               "notes":"Inserts the records in to the savebillofladding",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"savebillofladding"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/save/InsertTempTransactionDetails.json",
+         "description":" **Inserts the records in to the Insert TempTransaction Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Inserts the records in to the InsertTempTransactionDetails ",
+               "notes":"Inserts the records in to the InsertTempTransactionDetails",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"InsertTempTransactionDetails"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/update/updateorderstatus/{bill_of_ladding}.json",
+         "description":" **Returns the Update Order Status",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the Update Order Status",
+               "notes":"Returns the Update Order Status",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"bill_of_ladding",
+                     "description":"bill_of_ladding",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"updateOrderStatus"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/oderinfromation.json",
+         "description":" **get oderinfromation",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* get oderinfromation",
+               "notes":"get oderinfromation",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"getoderinfromation"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/getUnnumberAndPlacardInfo.json",
+         "description":" **get getUnnumberAndPlacardInfo",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* get getUnnumberAndPlacardInfo",
+               "notes":"get derinfromation",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"getUnnumberAndPlacardInfo"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/reprintoderinfromation.json",
+         "description":" **get reprintoderinfromation",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* get reprintoderinfromation",
+               "notes":"get reprintoderinfromation",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"reprintoderinfromation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/cancelorderdetails/{bill_of_ladding}.json",
+         "description":" **Returns the cancelorderdetails status",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the cancelorderdetails status",
+               "notes":"Returns the cancelorderdetails status",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"bill_of_ladding",
+                     "description":"bill_of_ladding",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"cancelorderdetailsstatus"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/generateoverpacklabels/{bill_of_ladding}.json",
+         "description":" **Returns the bill_of_ladding information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the bill_of_ladding information",
+               "notes":"Returns the bill_of_ladding information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"bill_of_ladding",
+                     "description":"bill_of_ladding",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"generateoverpacklabels"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/generatedocuments/{bill_of_ladding}/{User_id}.json",
+         "description":" **Returns the generatedocuments information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Returns the generatedocuments information",
+               "notes":"Returns the generatedocuments information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"bill_of_ladding",
+                     "description":"bill_of_ladding",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"User_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"generatedocuments"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/reprintgeneratedocuments/{bill_of_ladding}/{transport_company_id}/{packer_company_id}/{User_id}.json",
+         "description":" **Returns the generatedocuments information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the reprintgeneratedocuments information",
+               "notes":"Returns the reprintgeneratedocuments information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"bill_of_ladding",
+                     "description":"bill_of_ladding",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transport_company_id",
+                     "description":"transport_company_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"packer_company_id",
+                     "description":"packer_company_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"User_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"reprintgeneratedocuments"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/maxTransactionId.json",
+         "description":" **Returns max transaction information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns max transaction information",
+               "notes":"Returns max transaction information",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"maxTransaction"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/retrivetransactiondetails.json",
+         "description":" **Returns retrivetransactiondetails",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns retrivetransactiondetails",
+               "notes":"Returns retrivetransactiondetails",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"maxTransaction"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/retriveparticulartransactiondetails/{bill_of_ladding}.json",
+         "description":" **Returns the bill_of_ladding information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the bill_of_ladding information",
+               "notes":"Returns the bill_of_ladding information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"bill_of_ladding",
+                     "description":"bill_of_ladding",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"generateoverpacklabels"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/ModeOfTransportation/{id}.json",
+         "description":" **Returns the ModeOfTransportation information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the ModeOfTransportation information",
+               "notes":"Returns the ModeOfTransportation information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"id",
+                     "description":"id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"ModeOfTransportation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/updateModeOfTransportation/{id}/{mode}/{user_lang}.json",
+         "description":" **Returns the update ModeOfTransportation information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the update  ModeOfTransportation information",
+               "notes":"Returns the update ModeOfTransportation information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"id",
+                     "description":"id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"mode",
+                     "description":"mode",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"user_lang",
+                     "description":"user_lang",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"updateModeOfTransportation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/GenerateNewSkid.json",
+         "description":" **Generates new skid",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"* Generates new skid",
+               "notes":"Generates new skid",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"GenerateNewSkid"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getshippersId.json",
+         "description":" **Returns customer Id",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns customer Id",
+               "notes":"Returns customer Id",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"customerId"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/GetPackagingCodes.json",
+         "description":" **Returns GetPackagingCodes",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns GetPackagingCodes",
+               "notes":"Returns GetPackagingCodes",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"GetPackagingCodes"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/GetLatestBilloflading.json",
+         "description":" **Returns LatestBilloflading",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns LatestBilloflading",
+               "notes":"Returns LatestBilloflading",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"LatestBilloflading"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getcountryname/{id}.json",
+         "description":" **Returns country information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns country information",
+               "notes":"Returns country information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"id",
+                     "description":"id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"countryinformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getcitycodes.json",
+         "description":" **Returns citycodes",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns citycodes",
+               "notes":"Returns citycodes",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"getcitycodes"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getcountrycodes.json",
+         "description":" **Returns getcountrycodes",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns countrycodes",
+               "notes":"Returns countrycodes",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"getcountrycodes"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getproductId/{customer_id}/{flag}.json",
+         "description":" **Returns getproductId",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns getproductId",
+               "notes":"Returns getproductId",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"flag",
+                     "description":"flag",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"customer_id",
+                     "description":"customer_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"getproductId"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getlatestproductId.json",
+         "description":" **Returns getlatestproductId",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns getlatestproductId",
+               "notes":"Returns getlatestproductId",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"getlatestproductId"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getdimensionsofdrumandbox/{package_code}.json",
+         "description":" **Returns getdimensionsofdrumandbox",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns getdimensionsofdrumandbox",
+               "notes":"Returns getdimensionsofdrumandbox",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"package_code",
+                     "description":"package_code",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"getdimensionsofdrumandbox"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/canada/insertintotransaction/{maxPlacard}/{transaction_id}/{User_id}/{License_number}.json",
+         "description":" Insert the data into database and returns the Placard Info.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Insert the data into database and returns the Placard Info",
+               "notes":"Insert the data into database and returns the Placard Info",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  },
+                  {  
+                     "name":"maxPlacard",
+                     "description":"Enter maxplacard",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transaction_id",
+                     "description":"Enter transactionId",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"License_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"insertintotransaction"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getUserSessionId/{id}.json",
+         "description":" **Returns userSessionId.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"**Returns userSessionId.",
+               "notes":"Returns userSessionId.",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"id",
+                     "description":"id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"userSessionId"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/us/insertintoTransaction/{maxPlacard}/{transaction_id}/{User_id}/{License_number}.json",
+         "description":" Insert the data into database and returns the Placard Info.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Insert the data into database and returns the Placard Info",
+               "notes":"Insert the data into database and returns the Placard Info",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  },
+                  {  
+                     "name":"maxPlacard",
+                     "description":"Enter maxplacard",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transaction_id",
+                     "description":"Enter transactionId",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"License_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"PrintingInputvalues"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/IMDG/insertintoImdgTransaction/{maxPlacard}/{transaction_id}/{User_id}/{License_number}.json",
+         "description":" Insert the data into database and returns the Imdg Placard Info.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Insert the data into database and returns the Imdg Placard Info",
+               "notes":"Insert the data into database and returns the Imdg Placard Info",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  },
+                  {  
+                     "name":"maxPlacard",
+                     "description":"Enter maxplacard",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transaction_id",
+                     "description":"Enter transactionId",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"License_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"PrintingInputvalues"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/reprintdocuments/{days}.json",
+         "description":" **Returns billofladding.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"**Returns billofladding.",
+               "notes":"Returns billofladding.",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"days",
+                     "description":"days",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"returnbillofladding"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getAllBillOfLadingInfo/{days}.json",
+         "description":" **Returns billofladding.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"**Returns billofladding.",
+               "notes":"Returns billofladding.",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"days",
+                     "description":"days",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"returnbillofladding"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getshippercountryname.json",
+         "description":" **Returns shippercountryname ",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Returns shippercountryname",
+               "notes":"Returns countryname",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"shippercountryname"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/insertuserinformation.json",
+         "description":" **Inserts the records in to the tab user Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Inserts the records in to the tab user Table",
+               "notes":"Inserts the records in to the tab user Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"inserttabuserTable"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/updateuserinformation.json",
+         "description":" **Inserts the records in to the Update User Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Inserts the records in to the Update User Table",
+               "notes":"Inserts the records in to the Update User Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"UpdateUserInformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/bookshippment/{bill_of_ladding}/{transport_company_id}.json",
+         "description":" ** Book Shipment  based on the bill of ladding ",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"**  Book Shipment  based on the bill of ladding ",
+               "notes":" Book Shipment  based on the bill of ladding",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"bill_of_ladding",
+                     "description":"bill_of_ladding",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transport_company_id",
+                     "description":"transport_company_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"bookShipment"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/addtransportcompanydetais.json",
+         "description":" **Inserts the records in to the Transport company details Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Inserts the records in to the Transport company details Table",
+               "notes":"Inserts the records in to the Transport company details Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"insertTransportcompanydetailsTable"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/checkproductId/{product_id}.json",
+         "description":" **check productId",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** check productId",
+               "notes":"check productId",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"product_id",
+                     "description":"product_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"checkproductId"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/InnerPackagingCodes.json",
+         "description":" **Returns InnerPackagingCodes",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns InnerPackagingCodes",
+               "notes":"Returns InnerPackagingCodes",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"InnerPackagingCodes"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/billofladdingdetails.json",
+         "description":" **Returns billofladdingdetails",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns billofladdingdetails",
+               "notes":"Returns billofladdingdetails",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"billofladdingdetails"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/manageusers.json",
+         "description":" **Returns All User Information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns All User Information",
+               "notes":"Returns All User Information",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"ManageUsers"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/transportcompanydetais/{transportationmode}.json",
+         "description":" **Returns All transportcompanydetais",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns All transportcompanydetaisn",
+               "notes":"Returns All transportcompanydetais",
+               "responseClass":"string",
+               "parameters":[  
+                {  
+                     "name":"transportationmode",
+                     "description":"transportationmode",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"transportcompanydetais"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getreportedquntitiesbasedoncasnumber.json",
+         "description":" **get reported quntities based on casnumber",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* get reported quntities based on casnumber",
+               "notes":"get reported quntities based on casnumber",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"getreportedquntitiesbasedoncasnumber"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/cancelshipmentdetails/{bill_of_ladding}.json",
+         "description":" ** Cancel Shipment details based on the bill of ladding ",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"**  Cancel Shipment details based on the bill of ladding ",
+               "notes":" Cancel Shipment details based on the bill of ladding",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"bill_of_ladding",
+                     "description":"bill_of_ladding",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"cancelShipmentDetails"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/bookshipmentdetails.json",
+         "description":" **Returns All bookshipmentdetails",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns All bookshipmentdetails",
+               "notes":"Returns All bookshipmentdetails",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"allBookShipmentDetails"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/storedocumenationname.json",
+         "description":" ** storedocumenationname in sds-documentation table",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"**  storedocumenationname in sds-documentation table",
+               "notes":" storedocumenationname in sds-documentation table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"product_id",
+                     "description":"product_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"file_name",
+                     "description":"file_name",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"storedocumenationname"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/updateShipperconsignee.json",
+         "description":" **Updates shipper and consignee table based on customer_generate_id.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Inserts the records in to the tab user Table",
+               "notes":"Inserts the records in to the tab user Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"updateShipperconsignee"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/updatewarehouseinformation.json",
+         "description":" **update the records in to the address Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Update the records in to the address Table",
+               "notes":"Update the records in to the address Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"updateAddressInformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/productInformationbasedonproductid.json",
+         "description":" **return all product information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** return all product information",
+               "notes":"return all product information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"allProductInformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/updatetransportcompanydetais.json",
+         "description":" **Update the records in to the Transport company details Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Update the records in to the Transport company details Table",
+               "notes":"Update the records in to the Transport company details Table",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"updateTransportcompanydetailsTable"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getcustomerId.json",
+         "description":" **Returns Customer Id Details",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns Customer Id Details",
+               "notes":"Returns Customer Id Details",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"customerIdDetails"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/checkunumberisexistincompanyprofile.json",
+         "description":" **check unumber is existin company profile or not.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* check unumber is existin company profile or not.",
+               "notes":"check unumber is existin company profile or not.",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"checkunumberisexistincompanyprofile"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/checkunumberisexistincasnumber.json",
+         "description":" **check unumber is exist in casnumber or not.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* check unumber is exist in casnumber or not.",
+               "notes":"check unumber is exist in casnumber or not.",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"checkunumberisexistincasnumber"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/checksdsdocumentationexist.json",
+         "description":" **check sds documentation exist or not.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* check sds documentation exist or not.",
+               "notes":"check sds documentation exist or not.",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"checksdsdocumentationexist"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/checkzipcodeuisvalidated/{id}/{zipcode}/{country_name}.json",
+         "description":" **Returns the zip code is validated or not",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the zip code is validated or not",
+               "notes":"Returns the zip code is validated or not",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"id",
+                     "description":"id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"zipcode",
+                     "description":"zipcode",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"country_name",
+                     "description":"country_name",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"zipcodeuisvalidatedornot"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/delete/deleteproductinforamationbasedonproductid.json",
+         "description":" **delete product information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"DELETE",
+               "summary":"** delete product information",
+               "notes":"delete  product information",
+               "responseClass":"string",
+               "parameters":[  
+                   {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"deleteproductinformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/delete/shipperconsignee/{customer_id}/{table_id}.json",
+         "description":" **delete shipperconsignee information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"DELETE",
+               "summary":"** delete shipperconsignee information",
+               "notes":"delete shipperconsignee information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"customer_id",
+                     "description":"customer_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"table_id",
+                     "description":"table_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"deleteshipperconsigneeinformation"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/delete/WarehouseInformationdelete/{table_id}.json",
+         "description":" **delete shipperconsignee information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"DELETE",
+               "summary":"** delete Warehouse information",
+               "notes":"delete Warehouse information",
+               "responseClass":"string",
+               "parameters":[  
+                 
+                  {  
+                     "name":"table_id",
+                     "description":"table_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"deleteWarehouseinformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/delete/transportcompany/{id}.json",
+         "description":" **delete transportcompany information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"DELETE",
+               "summary":"** delete transportcompany information",
+               "notes":"delete  transportcompany information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"id",
+                     "description":"id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"deletetransportcompanyinformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getemegencynumber/{customer_id}.json",
+         "description":" **Get Emergency Number Information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Get Emergency Number Information",
+               "notes":"Get Emergency Number Information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"customer_id",
+                     "description":"customer_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"getEmergencyNumberInformation"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/checkemegencynumber/{customer_id}/{emergency_number}.json",
+         "description":" **Returns the emergency Number is exist or not",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the emergency Number is exist or not",
+               "notes":"Returns the emergency Number is exist or not",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"customer_id",
+                     "description":"customer_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"emergency_number",
+                     "description":"emergency_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"checkemegencynumber"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getmanufacturerdetails.json",
+         "description":" **Get Manufacture Information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Get Manufacture Information",
+               "notes":"Get Manufacture Information",
+               "responseClass":"string",
+               "parameters":[  
+                   {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"GetManufactureInformation"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/packagebasedlimitedqunatity/{un_number}/{pkg_group}.json",
+         "description":" **Returns the Limited Qunatity",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the Limited Qunatity",
+               "notes":"Returns the Limited Qunatityt",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"un_number",
+                     "description":"un_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"pkg_group",
+                     "description":"pkg_group",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"returnsLimitedQunatity"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/loginnotificationInformation.json",
+         "description":" **Returns companies",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns loginnotificationInformation",
+               "notes":"Returns loginnotificationInformation",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"loginnotificationInformation"
+            }
+         ]
+      },
+    {  
+         "path":"/api/web/Shipperinfromation/{Genarated_ID}.json",
+         "description":" **Returns Shipper infromation",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns Shipper infromation",
+               "notes":"Returns Shipper infromation",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"Genarated_ID",
+                     "description":"Genarated_ID",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"Shipperinfromation"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/consigneeinfromation/{Genarated_ID}.json",
+         "description":" **Returns Consignee Infromation",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns Consignee Infromation",
+               "notes":"Returns Consignee Infromation",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"Genarated_ID",
+                     "description":"Genarated_ID",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"ConsigneeInfromation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/GetCountryORStateinfromation/{CountryorState}.json",
+         "description":" **Returns Get Country OR State Infromation",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns Country OR State Infromation",
+               "notes":"Returns Country OR State Infromation",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"CountryorState",
+                     "description":"CountryorState",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"GetCountryORStateinfromation"
+            }
+         ]
+      },
+   {  
+         "path":"/api/web/GetBillofladingDetails/{billofladingId}.json",
+         "description":" **Returns the Billoflading Details",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the Billoflading Details",
+               "notes":"Returns theBilloflading Details",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"billofladingId",
+                     "description":"billofladingId",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  } 
+               ],
+               "nickname":"returnsBillofladingDetails"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/UpdateTransaction.json",
+         "description":" ** UpdateTransaction Information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"**  UpdateTransaction Information",
+               "notes":"UpdateTransaction Information",
+               "responseClass":"string",
+               "parameters":[  
+                   {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"UpdateTransaction"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/GetSegregationGroupInfo.json",
+         "description":" ** GetSegregationGroup Information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"**  GetSegregationGroup Information",
+               "notes":"GetSegregationGroup Information",
+               "responseClass":"string",
+               "parameters":[  
+                   {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"GetSegregationGroupInfo"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/info/getImdgUNnumberInfo/{un_number}.json",
+         "description":" **Returns Get ImdgUNnumber Infromation",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns ImdgUNnumber Infromation",
+               "notes":"Returns ImdgUNnumber Infromation",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"un_number",
+                     "description":"un_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"ImdgUNnumberInfromation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/us/RetrivalTransactions/{searchid}/{User_id}/{License_number}.json",
+         "description":"get RetrivalTransactions information.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** get RetrivalTransactions information.",
+               "notes":"get RetrivalTransactions information.",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  },
+                  {  
+                     "name":"searchid",
+                     "description":"Enter searchid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"License_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"RetrivalTransactionsinformation"
+            }
+         ]
+      },
+        {  
+         "path":"/api/web/us/USDeleteOrderTrasactions/{id}/{User_id}/{maxPlacard}/{trans_id}/{transaction_id}/{License_number}.json",
+         "description":" Deletes the record bases on User_id and trans_id.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"DELETE",
+               "summary":"** Deletes the record bases on User_id and trans_id",
+               "notes":"Deletes the record bases on User_id and trans_id",
+               "responseClass":"string",
+               "parameters":[  
+               {  
+                     "name":"id",
+                     "description":"Enter id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"maxPlacard",
+                     "description":"Enter maxplacard",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"trans_id",
+                     "description":"Enter Trans_ID",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transaction_id",
+                     "description":"Enter transactionId",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"License_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"DeleteUSATransaction"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/canada/CanadaDeleteOrderTrasactions/{id}/{User_id}/{maxPlacard}/{trans_id}/{transaction_id}/{License_number}.json",
+         "description":" Deletes the record bases on User_id and trans_id.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"DELETE",
+               "summary":"** Deletes the record bases on User_id and trans_id",
+               "notes":"Deletes the record bases on User_id and trans_id",
+               "responseClass":"string",
+               "parameters":[  
+                {  
+                     "name":"id",
+                     "description":"Enter id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"maxPlacard",
+                     "description":"Enter maxplacard",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"trans_id",
+                     "description":"Enter Trans_ID",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transaction_id",
+                     "description":"Enter transactionId",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"License_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"DeleteCANADATransaction"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/imdg/ImdgDeleteOrderTrasactions/{id}/{User_id}/{maxPlacard}/{trans_id}/{transaction_id}/{License_number}.json",
+         "description":" Deletes the record bases on User_id and trans_id.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"DELETE",
+               "summary":"** Deletes the record bases on User_id and trans_id",
+               "notes":"Deletes the record bases on User_id and trans_id",
+               "responseClass":"string",
+               "parameters":[  
+               {  
+                     "name":"id",
+                     "description":"Enter id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"maxPlacard",
+                     "description":"Enter maxplacard",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"trans_id",
+                     "description":"Enter Trans_ID",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transaction_id",
+                     "description":"Enter transactionId",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"License_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"DeleteIMDGTransaction"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/getCountryinfo/{location_type}/{location_parent_id}.json",
+         "description":" **Returns the Country information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns the Country information",
+               "notes":"Returns the Country information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"location_type",
+                     "description":"location_type",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"location_parent_id",
+                     "description":"location_parent_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"returnsCountryinformation"
+            }
+         ]
+      },
+      {
+   "path":"/api/web/Retrival/{User_id}/{searchid}.json",
+   "description":" Retrives the record bases on Search_Type and Search_Text",
+   "produces":[
+      "application/json"
+   ],
+   "operations":[
+      {
+         "httpMethod":"POST",
+         "summary":"** Retrives the record bases on Search_Type and Search_Text",
+         "notes":"Retrives the record bases on Search_Type and Search_Text",
+         "responseClass":"string",
+         "parameters":[
+            {
+               "name":"actualJSON",
+               "description":"JSON data",
+               "paramType":"body",
+               "required":true,
+               "allowMultiple":false,
+               "dataType":"JSONData"
+            },
+            {
+               "name":"User_id",
+               "description":"Enter userid",
+               "paramType":"path",
+               "required":true,
+               "allowMultiple":false,
+               "dataType":"string"
+            },
+            {
+               "name":"searchid",
+               "description":"searchid",
+               "paramType":"path",
+               "required":true,
+               "allowMultiple":false,
+               "dataType":"string"
+            }
+         ],
+         "nickname":"Retrival"
+      }
+   ]
+  },
+  {  
+         "path":"/api/web/getSegregationData.json",
+         "description":" **Returns SegregationList",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Returns SegregationList",
+               "notes":"Returns SegregationList",
+               "responseClass":"string",
+               "parameters":[  
+                   {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"ReturnsSegregationList"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/boxidincrement/{box_id}.json",
+         "description":" **Return Box Id Old Value",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"**Return Box Id Old Value",
+               "notes":"Return Box Id Old Value",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"box_id",
+                     "description":"box_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"returnboxidvalue"
+            }
+         ]
+      },{  
+         "path":"/api/web/assignlicenses.json",
+         "description":" **Returns the assignlicenses",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Returns the assignlicenses",
+               "notes":"Returns the assignlicenses",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"assignlicenses"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/licenses/licenseinformation/{User_id}.json",
+         "description":" **Returns license information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns license information",
+               "notes":"Returns license information",
+               "responseClass":"string",
+               "parameters":[  
+					{  
+                     "name":"user_id",
+                     "description":"user_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"licenseinformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/AddTransaction/{maxPlacard}/{transaction_id}/{User_id}/{License_number}.json",
+         "description":" Insert the data into database and returns the Placard Info.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Insert the data into database and returns the Placard Info",
+               "notes":"Insert the data into database and returns the Placard Info",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  },
+                  {  
+                     "name":"maxPlacard",
+                     "description":"Enter maxplacard",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transaction_id",
+                     "description":"Enter transactionId",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"License_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"PrintingInputvalues"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/IMDG/imdgSgregationInfo/{transaction_id}/{User_id}.json",
+         "description":" **Returns imdgSgregationInfo",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns imdgSgregationInfo",
+               "notes":"Returns imdgSgregationInfo",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"transaction_id",
+                     "description":"transaction_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"User_id Id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"imdgSgregationInfo"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/IMDG/GetImdgPlacardInfo/{User_id}/{transaction_id}.json",
+         "description":" **Returns GetImdgPlacardInfo",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns GetImdgPlacardInfo",
+               "notes":"Returns GetImdgPlacardInfo",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"User_id",
+                     "description":"User_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transaction_id",
+                     "description":"transaction_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"GetImdgPlacardInfo"
+            }
+         ]
+      },
+       {  
+         "path":"/api/web/Delivery/{User_id}/{maxPlacard}/{trans_id}/{transaction_id}/{License_number}.json",
+         "description":" Deletes the record bases on User_id and trans_id.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"DELETE",
+               "summary":"** Deletes the record bases on User_id and trans_id",
+               "notes":"Deletes the record bases on User_id and trans_id",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"maxPlacard",
+                     "description":"Enter maxplacard",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"trans_id",
+                     "description":"Enter Trans_ID",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"transaction_id",
+                     "description":"Enter transactionId",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"License_number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"DeleteTransaction"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/UpdateTransaction/{newtransaction}/{oldtransaction}/{old_trsans_ID}/{User_id}/{un_style}.json",
+         "description":" **Returns trans_id Info",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns trans_id Info",
+               "notes":"Returns trans_idInfo",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"newtransaction",
+                     "description":"newtransaction Id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"oldtransaction",
+                     "description":"oldtransaction Id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                   {  
+                     "name":"old_trsans_ID",
+                     "description":"old_trsans_ID",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"un_style",
+                     "description":"Enter un_style",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"UpdateTransaction"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/UNINFO/info/{UnNumber}/{User_id}/{companyName}/{License_number}/{license_session}/{gatewayIp}.json",
+         "description":" **Returns the unNumber Information.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"**Returns the unNumber Information",
+               "notes":"Returns the unNumber Information",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"UnNumber",
+                     "description":"UN number",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"User_id",
+                     "description":"Enter userid",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"companyName",
+                     "description":"Enter companyName",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"License_number",
+                     "description":"Enter license",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"license_session",
+                     "description":"Enter sessionToken",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"gatewayIp",
+                     "description":"Enter gatewayIp",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"unVerification"
+            }
+         ]
+      },
+        {  
+         "path":"/api/web/info/getUserPrivatization/{userType}.json",
+         "description":" **Returns All User Privatizations",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns All User Privatizations",
+               "notes":"Returns All User Privatizations",
+               "responseClass":"string",
+               "parameters":[  
+                {  
+                     "name":"userType",
+                     "description":"User Type",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"getUserPrivatization"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/info/updateUserPrivatization.json",
+         "description":" **Update the records in to the AccountPrivatization Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"* Update the records in to the AccountPrivatization Table.",
+               "notes":"Update the records in to the AccountPrivatization Table.",
+               "responseClass":"string",
+               "parameters":[  
+                  {  
+                     "name":"actualJSON",
+                     "description":"JSON data",
+                     "paramType":"body",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"JSONData"
+                  }
+               ],
+               "nickname":"updateUserPrivatization"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/info/getconfig/{name}.json",
+         "description":" **Update the records in to the config Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns Config value",
+               "notes":"Returns Config value",
+               "responseClass":"string",
+               "parameters":[  
+                {  
+                     "name":"name",
+                     "description":"name",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"getConfig"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/info/updateconfig/{name}/{value}.json",
+         "description":" **Update the records in to the config Table.",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Returns Config value",
+               "notes":"Returns Config value",
+               "responseClass":"string",
+               "parameters":[  
+                {  
+                     "name":"name",
+                     "description":"name",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"value",
+                     "description":"value",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"updateConfig"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/Insert/info/License/{User_id}/{gatewayIp}.json",
+         "description":" **Insert license Information",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"POST",
+               "summary":"** Returns  license Information Status",
+               "notes":"Returns license Information",
+               "responseClass":"string",
+               "parameters":[  
+                  {
+                     "name":"User_id",
+                     "description":"User_id",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  },
+                  {  
+                     "name":"gatewayIp",
+                     "description":"gatewayIp",
+                     "paramType":"path",
+                     "required":true,
+                     "allowMultiple":false,
+                     "dataType":"string"
+                  }
+               ],
+               "nickname":"InsertlicenseInformation"
+            }
+         ]
+      },
+      {  
+         "path":"/api/web/licenses/licensedistributionview.json",
+         "description":" **Returns license distribution view",
+         "produces":[  
+            "application/json"
+         ],
+         "operations":[  
+            {  
+               "httpMethod":"GET",
+               "summary":"** Returns license distribution view",
+               "notes":"Returns license distribution view",
+               "responseClass":"string",
+               "parameters":[  
+
+               ],
+               "nickname":"licensedistributionview"
+            }
+         ]
+      }
+   ],
+   "models":{  
+      "JSONData":{  
+         "id":"JSONData",
+         "properties":{  
+            "data":{  
+               "type":"string",
+               "description":"Put the json data"
+            }
+         }
+      }
+   }
+}
